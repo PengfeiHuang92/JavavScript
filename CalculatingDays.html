@@ -1,0 +1,26 @@
+<html>
+
+<head> 
+    <title> Calculating the days </title>
+    
+</head>
+<body>
+    
+
+    <div id="output"> </div>
+    
+    <script defer>
+        var currentDay = new Date();
+        var newYear = new Date("January 1, 2019");
+        var nextYear = newYear.getFullYear() + 1;
+        newYear.setFullYear(nextYear);
+        
+        var daysLeft = (currentDay -  newYear) / (1000*60*60*24);
+        var tmpDate = "<div>" + daysLeft +" days </div>";
+        var tmp = document.getElementById("output");
+        tmp.insertAdjacentHTML("afterbegin",tmpDate);
+        console.log(daysLeft);
+    </script>
+</body>
+
+</html>
