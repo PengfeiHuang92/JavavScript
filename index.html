@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <!--  To se the result of javascript, onpen this page on the web broswer  and go "inspect" 
       with Google Chorm : Alt + F11
@@ -9,13 +10,27 @@
             font-size: large;
         }
     </style>
-    <script src = "variable.js" defer></script>
-    <script src = "stringVariable.js" defer></script>
-    <script src = "array.js" defer></script>
+    <script src = "JavaScript/variable.js" defer></script>
+    <script src = "JavaScript/stringVariable.js" defer></script>
+    <script src = "JavaScript/array.js" defer></script>
+    <script src = "JavaScript/RatingStars.js" defer></script>
+    <script src = "JavaScript/Comments.js" defer></script>
 </head>
 <body>
 
-        <div>Java Script is fun.</div>
+        <div>Learning JavaScript is fun.</div>
+        <div id="ratingStars">
+            <img src="img/rating_white_star.png" alt="1" style="cursor:pointer"/>
+            <img src="img/rating_white_star.png" alt="2" style="cursor:pointer"/>
+            <img src="img/rating_white_star.png" alt="3" style="cursor:pointer"/>
+            <img src="img/rating_white_star.png" alt="4" style="cursor:pointer"/>
+            <img src="img/rating_white_star.png" alt="5" style="cursor:pointer"/>
+            <input type="text" name="ratting" id="ratting" style="font-size: 1.2em;border-width: 0px; margin-left: 8px;"/>
+        </div>
+        <div id="comment">
+            <textarea id="commentArea" style="width: 50%; height: 200px;"> </textarea>
+            <input type="text" name="wordCount" id="wordCount" value="0/1000" style="display:block; text-align: right; width:50%;display: block; border-width: 0px;"/>
+        </div>
 
 </body>
 </html>
